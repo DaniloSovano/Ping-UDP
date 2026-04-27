@@ -47,7 +47,7 @@ public class Main {
 
             System.out.println("\nEstatisticas:");
             System.out.println("Recebidos: " + pacotesRecebidos + " | Perdidos: " + pacotesPerdidos);
-            System.out.println("Taxa de perda: " + (pacotesPerdidos * 10) + "%");
+            System.out.println("Taxa de perda: " + ((pacotesPerdidos * 100.0) / 10) + "%");
             if (pacotesRecebidos > 0) {
                 System.out.println("RTT Medio: " + (rttTotal / pacotesRecebidos) + " ms");
             }
