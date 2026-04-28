@@ -219,7 +219,7 @@ public class Main {
         int sent = 0, received = 0, dropped = 0, lost = 0;
         long totalRtt = 0;
 
-        for (int i = 1; i <= 20; i++) {
+        for (int i = 1; i <= 10; i++) {
             String payload = "LOSS|" + i;
             byte[] data = payload.getBytes();
             DatagramPacket p = new DatagramPacket(data, data.length, serverAddress, port);
